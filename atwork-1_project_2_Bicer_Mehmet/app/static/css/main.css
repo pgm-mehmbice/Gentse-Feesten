@@ -1,0 +1,1239 @@
+@font-face {
+  font-family: Medium;
+  src: url(../fonts/transfonter.org-20201215-120652/Raleway-Medium.woff);
+}
+
+@font-face {
+  font-family: Bold;
+  src: url(../fonts/transfonter.org-20201215-120652/Raleway-Bold.woff);
+}
+
+@font-face {
+  font-family: Regular;
+  src: url(../fonts/transfonter.org-20201215-120652/Raleway-Regular.woff);
+}
+
+@font-face {
+  font-family: ExtraBold;
+  src: url(../fonts/transfonter.org-20201215-120652/Raleway-ExtraBold.woff);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ======================================================================== */
+
+/* Home */
+
+.header__herro {
+  background-image: url(../media/home_gsm.png);
+  height: 34.5rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+  width: 9rem;
+  z-index: 99999;
+}
+
+.search-div {
+transform: translateY(-1000%);
+}
+
+select#leaunge {
+  transform: translateY(-1000%);
+}
+
+svg.hambutten {
+  float: right;
+  margin-right: 1.5rem;
+  margin-top: -6rem;
+  width: 1.8rem;
+}
+
+.hambutten g {
+  fill: white;
+}
+
+.hamburgermenu {
+  position: absolute;
+  width: 100%;
+  visibility: hidden;
+}
+
+.hamburgermenu.open {
+  visibility: visible;
+  height: 102%;
+  margin-top: -10.1rem;
+  position: fixed;
+  z-index: 9;
+}
+
+.hamburgermenu.open svg {
+  z-index: 9999;
+}
+
+.hamburgermenu ul {
+  font-family: 'ExtraBold';
+  list-style: none;
+  font-size: 1.3rem;
+  width: 100%;
+  background: black;
+  height: 100%;
+  padding: 3rem 1.5rem;
+}
+
+.hamburgermenu li {
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.hamburgermenu a {
+  color: white;
+}
+
+.nav {
+  margin: auto;
+}
+
+.header-center svg {
+  margin: 1rem 2rem;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-datum {
+  background: black;
+}
+
+.header-datum ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+.header-datum span {
+  font-family: Bold;
+}
+
+.header-datum li {
+  font-family: Medium;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.73rem;
+}
+
+.header-datum li:hover {
+  background-color: white;
+  color: black;
+}
+
+.events {
+  margin: 1.5rem;
+  margin-top: 5rem;
+}
+
+.article-event {
+  margin-bottom: 2rem;
+}
+
+.foto-datum img {
+  width: 18rem;
+  height: 12rem;
+  object-fit: fill;
+}
+
+.foto-datum p {
+  font-family: 'Medium';
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0 2rem;
+  margin-top: -1.5rem;
+  margin-right: 0.1rem;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.description-plaats h3 {
+  font-family: ExtraBold;
+  color: black;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-left: 2rem;
+  margin-right: 0.1rem;
+}
+
+.description-plaats p {
+  font-family: 'Regular';
+  color: black;
+  font-size: 1.2rem;
+  margin-top: -0.5rem;
+  margin-left: 2rem;
+}
+
+.news {
+  margin: 1.5rem;
+  margin-top: 6rem;
+}
+
+.article-new {
+  margin-bottom: 2rem;
+}
+
+.foto-datum-1 img {
+  width: 18rem;
+  height: 10rem;
+  object-fit: fill;
+}
+
+.foto-datum-1 p {
+  font-family: 'Medium';
+  color: black;
+  background-color: white;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: -3.3rem;
+  margin-right: 11rem;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.title-synopsis h3 {
+  font-family: ExtraBold;
+  color: black;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.title-synopsis p {
+  font-family: 'Regular';
+  color: black;
+  font-size: 1.1rem;
+  margin-top: -0.5rem;
+}
+
+.title-synopsis img {
+  width: 1.3rem;
+}
+
+.bekijk-nieuws p {
+  font-family: 'Bold';
+  text-align: center;
+  color: black;
+  margin: 0 1.5rem;
+  margin-bottom: 3rem;
+  border: 3px solid black;
+  padding: 1.5rem 4rem;
+  line-height: 1.7rem;
+}
+
+.bekijk-nieuws p:hover {
+  transition: 0.4s;
+  background-color: black;
+  color: white;
+}
+
+.article1,
+.article2,
+.article3 {
+  margin: 1rem;
+}
+
+.article3 img {
+  width: 110%;
+  margin-left: -1rem;
+}
+
+.article3 p {
+  font-family: 'Bold';
+  background-color: white;
+  margin: 0 6rem;
+  margin-top: -3.2rem;
+  padding: 1rem 2.5rem;
+  position: absolute;
+}
+
+.article4 {
+  margin: 1rem;
+  margin-top: 4rem;
+}
+
+.article4 img {
+  width: 100%;
+}
+
+.beleef {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.twitterr {
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+}
+
+.volg {
+  font-family: bold;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.volgen {
+  margin-right: 2rem;
+}
+
+.volgen p {
+  font-family: regular;
+}
+
+.volgen svg {
+  margin: 0 8rem;
+}
+
+.footer-article1 {
+  background-color: black;
+  color: white;
+  padding-top: 1rem;
+  padding-left: 4rem;
+  height: 7rem;
+}
+
+.footer-article1 .pijl {
+  float: right;
+  margin-top: -1rem;
+  margin-right: 5rem;
+}
+
+.footer-article1 p {
+  margin: 0;
+}
+
+.footer-article2 {
+  background-color: white;
+  color: black;
+  padding-top: 1rem;
+  padding-left: 4rem;
+  height: 7rem;
+}
+
+.footer-article2 .pijl {
+  float: right;
+  margin-top: -1rem;
+  margin-right: 5rem;
+}
+
+.footer-article2 p {
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-left: 4rem;
+}
+
+.footer-article3 img {
+  width: 100%;
+}
+
+.footer-article3__hoogte {
+  padding: 2rem 1rem;
+}
+
+.footer-article3__hoogte h2 {
+  font-family: ExtraBold;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.footer-article3__hoogte p {
+  font-family: Medium;
+  font-size: 1.1rem;
+  margin-right: 2rem;
+}
+
+.mail {
+  display: flex;
+  flex-direction: column;
+}
+
+.mail label {
+  font-family: Regular;
+}
+
+input#email {
+  font-family: Regular;
+  display: flex;
+  padding: 1rem;
+  width: 19rem;
+  background: lightgray;
+}
+
+.mail input {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-background {
+  background: url(../media/Rectangle\ 51.png);
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.mini-logo {
+  margin-left: 1rem;
+}
+
+.footer-background h3 {
+  font-family: Regular;
+  color: white;
+  margin-top: 5rem;
+}
+
+.fa {
+  padding: 0.7rem 1rem;
+  font-size: 1.8rem;
+  width: 1.8rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  background: black;
+  fill: white;
+  transition: 0.5s;
+}
+
+.media-icons path:hover {
+  fill: white;
+}
+
+.media-icons g:hover {
+  fill: white;
+}
+
+.fa-twitter,
+.fa-facebook,
+.fa-flickr,
+.fa-youtube {
+  background: white;
+  fill: black;
+}
+
+.footer-bottom {
+  margin: 1rem;
+  margin-top: 4rem;
+}
+
+.footer-bottom p {
+  font-family: Regular;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  margin-right: 2rem;
+}
+
+.cookie {
+  font-family: bold;
+  background: black;
+  color: white;
+  border: 3px solid black;
+  padding: 0.5rem 1rem;
+}
+
+.cookie:hover {
+  background: white;
+  color: black;
+  transition: 0.3s;
+}
+
+
+@media(min-width: 48rem) {
+  .header__herro {
+    background-image: url(../media/home_ipad.png);
+  }
+
+  .logo {
+    width: 11rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  svg.hambutten {
+    margin-top: -6.5rem;
+  }
+
+  .header-datum li {
+    padding: 0.9rem;
+  }
+
+  .events {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    margin-top: 3rem;
+  }
+
+  .article-event {
+    width: 21rem;
+    margin: 0.7rem;
+  }
+
+  .foto-datum img {
+    width: 21rem;
+    height: 14rem;
+  }
+  .foto-datum p {
+    margin: 0 2.4rem;
+    margin-right: 2.3rem;
+    margin-top: -1.5rem;
+  }
+
+  .description-plaats h3 {
+    margin-left: 2.4rem;
+    margin-right: 2.3rem;
+  }
+
+  .description-plaats p {
+    margin-left: 2.4rem;
+  }
+
+  .foto-datum-1 img {
+    width: 44rem;
+    height: 25rem;
+  }
+
+  .foto-datum-1 p {
+    margin-right: 37rem;
+  }
+
+  .title-synopsis h3 {
+    font-size: 2rem;
+  }
+
+  .bekijk-nieuws p {
+    margin-right: 24rem;
+  }
+
+  .article3 img {
+    width: 104.5%;
+    margin: 0rem -1rem;
+  }
+
+  .article3 p {
+    margin: 0 17rem;
+    margin-top: -4.7rem;
+    padding: 1.5rem 4.5rem;
+    font-size: 1.5rem;
+  }
+
+  .article4 {
+    margin: 1.5rem;
+  }
+
+  .beleef {
+    margin-bottom: 4rem;
+  }
+
+  .twitterr {
+    margin-bottom: 5rem;
+  }
+
+  .volg {
+    margin-left: -16.2rem;
+  }
+
+  a.volg {
+    font-size: 2rem;
+  }
+
+  .volgen {
+    margin-top: 2rem;
+  }
+
+  .volgen svg {
+    margin: 0 20rem;
+    width: 5rem;
+    height: 0.9rem;
+  }
+
+  .footer-article3__hoogte {
+    margin-top: 5rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .privacy {
+    text-decoration: underline;
+    color: black;
+  }
+
+  input#email {
+    display: unset;
+    width: 35rem;
+  }
+
+  .mail input {
+    padding: 1rem 2rem;
+    margin-left: -0.3rem;
+  }
+
+  .footer-background {
+    height: 25rem;
+  }
+
+
+  .footer-background h3 {
+    margin-top: 6rem;
+  }
+
+  .mini-logo {
+    margin-left: 1rem;
+    width: 18rem;
+    height: 10rem;
+    margin-top: -0.2rem;
+  }
+  
+  .media-icons {
+    margin-top: 1rem;
+  }
+
+  .footer-bottom {
+    margin: 1.5rem;
+    margin-top: 5rem;
+  }
+}
+
+@media(min-width: 80rem) {
+  .header__herro {
+    background-image: url(../media/home_desktop.png);
+    height: 43rem;
+  }
+
+  .hambutten {
+    transform: translateY(-1000%);
+  }
+
+  .hamburgermenu {
+    transform: translateY(0%);
+    transition: none;
+    margin-left: 0rem;
+    visibility: visible;
+    margin-top: -4rem;
+  }
+
+  .hamburgermenu.open {
+    transform: translateY(0%);
+    transition: none;
+    margin-bottom: 7rem;
+  }
+
+  .hamburgermenu ul {
+    width: unset;
+    background: none;
+    display: flex;
+    margin-top: 0rem;
+    justify-content: flex-end;
+    margin-right: 0rem;
+  }
+
+  .hamburgermenu li {
+    font-family: 'Bold';
+    padding: 0;
+    margin: 0 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .hamburgermenu li:hover {
+    background: none;
+    border: solid white;
+    border-width: 0px 0px 5px 0px;
+  }
+
+  .hamburgermenu a {
+    font-size: 1rem;
+  }
+
+  .search-div {
+    transform: translateY(0%);
+    float: right;
+    margin-right: 5rem;
+    margin-top: 1rem;
+  }
+
+  input#search {
+    height: 2.5rem;
+    width: 20rem;
+    padding: 0.5rem;
+  }
+
+  .search-icon {
+    fill: white;
+    background: black;
+    margin-left: -0.3rem;
+  }
+  
+  .search-icon:hover {
+    fill: black;
+    background-color: white;
+  }
+
+  select#leaunge {
+    transform: translateY(0%);
+    float: right;
+    color: white;
+    background-color: black;
+    margin: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 15rem;
+    height: 6rem;
+    margin-left: 2rem;
+  }
+
+  .header-center {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -23rem;
+  }
+
+  .header-center svg {
+    height: 7rem;
+    width: 22rem;
+  }
+
+  svg.gf19 {
+    transform: rotate(-90deg);
+    height: 2rem;
+    margin-right: -9rem;
+  }
+
+  .header-center path {
+    fill: white;
+  }
+
+  .header-center g {
+    fill: white;
+  }
+
+  .header-datum {
+    background: black;
+    float: right;
+    padding: 0rem;
+    margin-bottom: 8rem;
+    width: 38rem;
+    background: white;
+  }
+
+  .header-datum ul {
+    margin: 0;
+  }
+
+  .header-datum span {
+    font-size: 1.7rem;
+  }
+
+  .header-datum li {
+    color: black;
+    padding: 1.4rem 2.44rem;
+  }
+
+  .header-datum li:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .events {
+    margin-top: 20rem;
+  }
+
+  .article-event {
+    width: 24.6rem;
+    margin: 0.5rem;
+  }
+
+  .foto-datum img {
+    width: 24.5rem;
+    height: 16.5rem;
+  }
+
+  .foto-datum p {
+    margin: 0 3.5rem;
+    margin-right: 5rem;
+    margin-top: -1.5rem;
+  }
+
+  .description-plaats h3 {
+    margin-left: 3.5rem;
+    margin-right: 4rem;
+    font-size: 1.8rem;
+  }
+
+  .description-plaats p {
+    margin-left: 3.5rem;
+  }
+
+  .article-new {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8rem;
+  }
+
+  .foto-datum-1 img {
+    width: 35rem;
+    height: 20rem;
+  }
+
+  .foto-datum-1 p {
+    transform: rotate(-90deg);
+    top: -11.8rem;
+    left: -36.5rem;
+    margin: 0 30rem;
+  }
+
+  .title-synopsis {
+    margin-top: -26.5rem;
+    margin-left: 39rem;
+    margin-right: 4rem;
+  }
+
+  .title-synopsis h3 {
+    font-size: 3rem;
+    line-height: 3.7rem;
+  }
+
+  .title-synopsis p {
+    font-size: 1.2rem;
+  }
+
+  .bekijk-nieuws p {
+    margin-right: 56rem;
+    margin-top: 10rem;
+    margin-bottom: 7rem;
+  }
+
+  .article3 img {
+    width: 102.5%;
+  }
+
+  .article3 p {
+    margin: 0 36rem;
+    margin-top: -4.9rem;
+  }
+
+  .article4 img {
+    width: 42rem;
+    height: 28rem;
+    margin-left: -2rem;
+    float: left;
+  }
+
+  .beleef {
+    margin-bottom: 6rem;
+    width: 20rem;
+    height: 6rem;
+    margin-left: 3rem;
+  }
+
+  .twitterr {
+    margin-bottom: 8rem;
+    margin-left: 1rem;
+    width: 6rem;
+    height: 3rem;
+  }
+
+  a.volg {
+    font-size: 2rem;
+    margin-left: 3rem;
+  }
+
+  .volgen p {
+    font-family: regular;
+    margin-left: 43rem;
+    font-size: 1.3rem;
+  }
+
+  .volgen svg {
+    width: 5rem;
+    height: 0.9rem;
+    float: right;
+    margin-top: -8rem;
+    margin-right: -1rem;
+  }
+
+  .volgen a {
+    color: black;
+  }
+
+  .footer-article3__hoogte {
+    margin-top: 8rem;
+    margin-left: 16rem;
+  }
+
+  .footer-article3__hoogte h2 {
+    font-size: 3rem;
+  }
+
+  .footer-background {
+    height: 40rem;
+  }
+
+  .footer-background h3 {
+    margin-top: 6rem;
+    font-size: 2rem;
+    margin-right: 46rem;
+  }
+
+  .footer-bottom {
+    display: flex;
+    margin-top: 16rem;
+  }
+
+  .footer-bottom svg {
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+
+  .cookie {
+    padding: 1rem 0.5rem;
+    width: 13rem;
+    height: max-content;
+    margin-top: 1rem;
+  }
+}
+
+/* ======================================================================== */
+
+/* Dag */
+
+.header-center-1 {
+  margin-top: -14rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  margin-right: 2rem;
+}
+
+svg.gf19-1 {
+  margin-top: 1rem;
+}
+
+.header-center-1 path {
+  fill: white;
+}
+
+.header-center-1 g {
+  fill: white;
+}
+
+.header-datum-1 {
+  background: black;
+}
+
+.header-datum-1 ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+.header-datum-1 span {
+  font-family: Bold;
+}
+
+.header-datum-1 li {
+  font-family: Medium;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.73rem;
+}
+
+.header-datum-1 li:hover {
+  background-color: white;
+  color: black;
+}
+
+.events1 {
+  margin: 1.5rem;
+  margin-top: 5rem;
+}
+
+.article-event1 {
+  margin-bottom: 2rem;
+}
+
+.foto-datum1 img {
+  width: 18rem;
+  height: 12rem;
+  object-fit: fill;
+}
+
+.foto-datum1 p {
+  font-family: 'Medium';
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0 5rem;
+  margin-top: -1.5rem;
+  margin-right: 5.1rem;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.description-plaats1 h3 {
+  font-family: ExtraBold;
+  color: black;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-left: 2rem;
+  margin-right: 0.1rem;
+}
+
+.description-plaats1 p {
+  font-family: 'Regular';
+  color: black;
+  font-size: 1.2rem;
+  margin-top: -0.5rem;
+  margin-left: 2rem;
+}
+
+article.all {
+  margin: 1.5rem;
+}
+
+.vinkjes {
+  display: flex;
+  flex-direction: column;
+}
+
+.vinkjes-samen {
+  margin-left: 3rem;
+  margin-bottom: -1rem;
+}
+
+input#rolstoel,
+input#gratis {
+  height: 2rem;
+  width: 1.2rem;
+}
+
+input#rolstoel,
+input#gratis:hover {
+  color: #000;
+  background: #000;
+}
+
+label svg {
+  width: 1rem;
+}
+
+.vinkjes-samen label {
+  margin-top: -1rem;
+}
+
+.icontjes1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.icontjes1 a {
+  width: 1rem;
+}
+
+.icontjes1 svg {
+  width: 4rem;
+  height: 4rem;
+  border: 3px solid black;
+  padding: 0.5rem;
+  margin: 0.5rem 0rem;
+}
+
+.icontjes1 svg:hover {
+  background: black;
+  fill: white;
+}
+
+.categories {
+  background: black;
+  width: 13.8rem;
+  margin-top: -21rem;
+  margin-left: 5.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.categories a {
+  font-family: bold;
+  color: white;
+  word-break: break-all;
+}
+
+.sorteer {
+  width: 10rem;
+  height: 2rem;
+  float: right;
+  margin-right: -4rem;
+  margin-top: 1rem;
+}
+
+.sorteer svg {
+  padding: 0.5rem;
+  border: 4rem;
+  width: 3rem;
+  height: 3rem;
+  border: 3px solid black;
+}
+
+.sorteer svg:hover {
+  background: black;
+  fill: white;
+}
+
+.sorteer .black {
+  background-color: black;
+  fill: white;
+}
+
+
+
+span.privacy {
+  color: black;
+  text-decoration: underline;
+}
+
+
+@media(min-width: 48rem) {
+  .header-center-1 {
+    margin-top: -8rem;
+    margin-right: 4rem;
+  }
+  
+  .header-datum-1 ul {
+    margin-top: 2rem;
+    margin-bottom: -4rem;
+  }
+  
+  .header-datum-1 li {
+    font-size: 1.2rem;
+  }
+
+  .events1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    margin-top: 7rem;
+  }
+
+  .article-event1 {
+    width: 21rem;
+    margin: 0.7rem;
+  }
+
+  .foto-datum1 img {
+    width: 21rem;
+    height: 14rem;
+  }
+  .foto-datum1 p {
+    margin: 0 2.4rem;
+    margin-right: 11.3rem;
+    margin-top: -1.5rem;
+  }
+
+  .description-plaats1 h3 {
+    margin-left: 2.4rem;
+    margin-right: 2.3rem;
+  }
+
+  .description-plaats1 p {
+    margin-left: 2.4rem;
+  }
+
+  .categories {
+    width: 39.9rem;
+  }
+
+  .sorteer {
+    width: 7rem;
+    margin-right: -1rem;
+  }
+
+}
+
+@media(min-width: 80rem) {
+  
+  .header__datum-1 ul {
+    height: 7.2rem;
+  }
+
+  .header-datum-1 li {
+    font-size: 1.8rem;
+    padding: 1.5rem;
+  }
+
+  .events1 {
+    margin-top: 7rem;
+  }
+
+  .article-event1 {
+    width: 24.6rem;
+    margin: 0.5rem;
+  }
+
+  .foto-datum1 img {
+    width: 24.5rem;
+    height: 16.5rem;
+  }
+
+  .foto-datum1 p {
+    margin: 0 3.5rem;
+    margin-right: 13rem;
+    margin-top: -1.5rem;
+  }
+
+  .description-plaats1 h3 {
+    margin-left: 3.5rem;
+    margin-right: 4rem;
+    font-size: 1.8rem;
+  }
+
+  .description-plaats1 p {
+    margin-left: 3.5rem;
+  }
+
+  .categories {
+    width: 62rem;
+    margin-left: 15.4rem;
+    margin-top: -25rem;
+  }
+
+  .icontjes1 svg {
+    width: 11rem;
+    padding-right: 7.5rem;
+  }
+}
